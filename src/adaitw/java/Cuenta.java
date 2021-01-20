@@ -2,7 +2,7 @@ package adaitw.java;
 
 public class Cuenta {
     private String moneda;
-    private Double saldo;
+    protected Double saldo;
 
     //Constructor
     public Cuenta(Double saldoInicial){
