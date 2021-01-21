@@ -10,10 +10,12 @@ public class Cuenta {
         moneda = "ARS";
     }
 
+    //Getter
     public Double getSaldo(){
         return saldo;
     }
 
+    //Métodos
     public void depositar(Double monto){
         saldo += monto;
     }
