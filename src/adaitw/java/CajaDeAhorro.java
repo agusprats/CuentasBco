@@ -14,5 +14,3 @@ public class CajaDeAhorro extends Cuenta{
 
     }
 }
-
-/* 3 clientes empresa gde pyme individuo las dos primeras tienen razon social*/

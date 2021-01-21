@@ -2,6 +2,7 @@ package adaitw.java;
 
 public class Cliente {
     private Integer numeroCliente;
+    private static int prestamo = 30000;
     private CajaDeAhorro cDeAhorro;
     private CuentaCorriente cCorriente;
     private ClientePyme cPyme;
@@ -23,17 +24,28 @@ public class Cliente {
     public Cliente(Integer numeroCliente, Double saldoInicial) {
         this.numeroCliente = numeroCliente;
     }
+    //Constructor
+    public Cliente(Integer prestamo) {
+        this.prestamo = prestamo;
+    }
 
     //Getters
     public CuentaCorriente getcCorriente() {
         return cCorriente;
     }
-
     public CajaDeAhorro getcDeAhorro() {
         return cDeAhorro;
     }
+    public Integer getNumeroCliente() {
+        return numeroCliente;
+    }
 
-
+    public static Integer getPrestamo(){
+        return prestamo;
+    }
+    public static void setPrestamo(int prestamo){
+        Cliente.prestamo = prestamo;
+    }
 }
 /*
 Agregar 3 categorías de clientes:

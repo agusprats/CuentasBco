@@ -9,7 +9,7 @@ public class Main {
 
         ClientePyme sodaSrl = new ClientePyme(1231, 5500.00);
         ClienteEmpresa segurosSa = new ClienteEmpresa(1232, 10000.00);
-        ClienteIndividuo anaB = new ClienteIndividuo(1233, 3500.00);
+        ClienteIndividuo ana = new ClienteIndividuo(1233, 3500.00);
 
         CajaDeAhorro cdaPablo = pablo.getcDeAhorro();
 
@@ -17,8 +17,11 @@ public class Main {
         cdaPablo.depositar(100.0);
         cdaPablo.extraer(50.25);
         cdaPablo.depositar(300.50);
-        System.out.println(("El saldo es: " +cdaPablo.getSaldo()));
 
+
+        System.out.println(("El saldo es: " +cdaPablo.getSaldo()));
+        System.out.println("El número de cliente de sodaSrl es: "+sodaSrl.getNumeroCliente());
+        System.out.println("El prestamo pre aprobado Pyme es: "+ClientePyme.getPrestamo());
     }
 }
 
@@ -36,20 +39,16 @@ Las ctas ctes admiten descubiertos*/
         private Integer dni;
         private String nombre;
     }
-*/
-/*  Una CuentaCorriente "es un tipo de" Cuenta.// superclase
+
+Una CuentaCorriente "es un tipo de" Cuenta.// superclase
     class CuentaCorriente extends Cuenta{}
 
           *** Agregar 3 categorías de clientes: ***
 Cliente PYMES, Cliente Empresa y Cliente Individuo.
-
 Las pymes y las empresas tienen razón social y CUIT.
 Los clientes individuos tienen nombre y DNI.
-
 Los clientes de todas las categorías tienen número de cliente, cuenta corriente y caja de ahorro.
-
 Todos los clientes pueden consultar su saldo, hacer depósitos y extracciones de sus cuentas.
-
-YAPA: Los clientes individuo y pymes pueden pedir préstamos.
+Los clientes individuo y pymes pueden pedir préstamos.
 
 */
