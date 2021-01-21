@@ -13,7 +13,6 @@ public class Cliente {
         cCorriente = new CuentaCorriente(0.00);
         cDeAhorro = new CajaDeAhorro(saldoInicial);
     }
-
     //Constructor
     public Cliente(ClientePyme cPyme, ClienteEmpresa cEmpresa, ClienteIndividuo cIndividuo) {
         this.cPyme = cPyme;
@@ -21,7 +20,7 @@ public class Cliente {
         this.cIndividuo = cIndividuo;
     }
     //Constructor
-    public Cliente(Integer numeroCliente) {
+    public Cliente(Integer numeroCliente, Double saldoInicial) {
         this.numeroCliente = numeroCliente;
     }
 

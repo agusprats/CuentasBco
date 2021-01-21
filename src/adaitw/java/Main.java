@@ -6,9 +6,10 @@ public class Main {
 
 
         Cliente pablo = new Cliente( 50.00);
-        ClientePyme sodaSrl = new ClientePyme(1231);
-        ClienteEmpresa segurosSa = new ClienteEmpresa(1232);
-        ClienteIndividuo anaB = new ClienteIndividuo(1233);
+
+        ClientePyme sodaSrl = new ClientePyme(1231, 5500.00);
+        ClienteEmpresa segurosSa = new ClienteEmpresa(1232, 10000.00);
+        ClienteIndividuo anaB = new ClienteIndividuo(1233, 3500.00);
 
         CajaDeAhorro cdaPablo = pablo.getcDeAhorro();
 
