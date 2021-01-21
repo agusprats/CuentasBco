@@ -20,6 +20,10 @@ public class Cliente {
         this.cEmpresa = cEmpresa;
         this.cIndividuo = cIndividuo;
     }
+    //Constructor
+    public Cliente(Integer numeroCliente) {
+        this.numeroCliente = numeroCliente;
+    }
 
     //Getters
     public CuentaCorriente getcCorriente() {

@@ -4,13 +4,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-        ClientePyme cPyme = new ClientePyme();
-        ClienteEmpresa cEmpresa = new ClienteEmpresa();
-        ClienteIndividuo cIndividuo = new ClienteIndividuo();
 
         Cliente pablo = new Cliente( 50.00);
-        ClientePyme sodaSrl = new ClientePyme();
-
+        ClientePyme sodaSrl = new ClientePyme(1231);
+        ClienteEmpresa segurosSa = new ClienteEmpresa(1232);
+        ClienteIndividuo anaB = new ClienteIndividuo(1233);
 
         CajaDeAhorro cdaPablo = pablo.getcDeAhorro();
 
