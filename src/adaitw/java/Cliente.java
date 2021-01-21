@@ -2,12 +2,12 @@ package adaitw.java;
 
 public class Cliente {
     private Integer numeroCliente;
-    private static int prestamo = 30000;
     private CajaDeAhorro cDeAhorro;
     private CuentaCorriente cCorriente;
     private ClientePyme cPyme;
     private ClienteEmpresa cEmpresa;
     private ClienteIndividuo cIndividuo;
+    private static Integer prestamo = 30000;
 
     //Constructor crea los objetos
     public Cliente(Double saldoInicial){
@@ -25,7 +25,7 @@ public class Cliente {
         this.numeroCliente = numeroCliente;
     }
     //Constructor
-    public Cliente(Integer prestamo) {
+    public Cliente(int prestamo) {
         this.prestamo = prestamo;
     }
 
@@ -39,13 +39,10 @@ public class Cliente {
     public Integer getNumeroCliente() {
         return numeroCliente;
     }
-
     public static Integer getPrestamo(){
         return prestamo;
     }
-    public static void setPrestamo(int prestamo){
-        Cliente.prestamo = prestamo;
-    }
+
 }
 /*
 Agregar 3 categorías de clientes:
