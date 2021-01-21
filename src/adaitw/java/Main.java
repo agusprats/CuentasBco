@@ -8,7 +8,7 @@ public class Main {
         ClienteEmpresa cEmpresa = new ClienteEmpresa();
         ClienteIndividuo cIndividuo = new ClienteIndividuo();
 
-        Cliente pablo = new Cliente(saldoInicial: 50.00);
+        Cliente pablo = new Cliente( 50.00);
         ClientePyme sodaSrl = new ClientePyme();
 
 

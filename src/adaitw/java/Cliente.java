@@ -9,24 +9,19 @@ public class Cliente {
     private ClienteIndividuo cIndividuo;
 
     //Constructor crea los objetos
-    public Cliente(){
-        this.cCorriente = new CuentaCorriente(0.00);
-        this.cDeAhorro = new CajaDeAhorro(saldoInicial);
-        this.cPyme = new ClientePyme();
-        this.cEmpresa = new ClienteEmpresa();
-        this.cIndividuo = new ClienteIndividuo();
-    };
-    //Constructor
-    /*
-    public Cliente(Integer numeroCliente) {
-        this.numeroCliente = numeroCliente;
-    }
-*/
-    //Getters
-    public Integer getNumeroCliente(Integer numeroCliente) {
-        return numeroCliente;
+    public Cliente(Double saldoInicial){
+        cCorriente = new CuentaCorriente(0.00);
+        cDeAhorro = new CajaDeAhorro(saldoInicial);
     }
 
+    //Constructor
+    public Cliente(ClientePyme cPyme, ClienteEmpresa cEmpresa, ClienteIndividuo cIndividuo) {
+        this.cPyme = cPyme;
+        this.cEmpresa = cEmpresa;
+        this.cIndividuo = cIndividuo;
+    }
+
+    //Getters
     public CuentaCorriente getcCorriente() {
         return cCorriente;
     }
