@@ -1,8 +1,8 @@
 package adaitw.java;
 
 public class ClienteEmpresa extends Cliente {
-    private String razonSocial;
-    private Integer cuit;
+    protected String razonSocial;
+    protected Integer cuit;
 
     public String getRazonSocial() {
         return razonSocial;
@@ -23,5 +23,10 @@ public class ClienteEmpresa extends Cliente {
     public ClienteEmpresa(int numeroCliente, Double saldoInicial) {
         super(numeroCliente, saldoInicial);
     }
-
 }
+/* @Override
+    public void getPrestamo(Integer prestamo) {
+    System.out.println("No esta permitido dar prestamos para empresas");
+    }
+*/
+

@@ -8,6 +8,8 @@ public class Cliente {
     private ClienteEmpresa cEmpresa;
     private ClienteIndividuo cIndividuo;
     private static Integer prestamo = 30000;
+    //private Double limitePrestamo;
+
 
     //Constructor crea los objetos
     public Cliente(Double saldoInicial){
@@ -42,8 +44,14 @@ public class Cliente {
     public static Integer getPrestamo(){
         return prestamo;
     }
-
 }
+
+/*public void obtenerPrestamo(Double monto){
+ inicio tramite
+ si se aprueba
+ cDeAhorro.depositar(monto)*/
+
+
 /*
 Agregar 3 categorías de clientes:
 Cliente PYMES, Cliente Empresa y Cliente Individuo.ok

@@ -1,8 +1,8 @@
 package adaitw.java;
 
 public class ClienteIndividuo extends Cliente{
-    private String nombre;
-    private Integer dni;
+    protected String nombre;
+    protected Integer dni;
 
 
     public String getNombre() {

@@ -1,8 +1,8 @@
 package adaitw.java;
 
 public class ClientePyme extends Cliente{
-    private String razonSocial;
-    private Integer cuit;
+    protected String razonSocial;
+    protected Integer cuit;
 
     public String getRazonSocial() {
         return razonSocial;

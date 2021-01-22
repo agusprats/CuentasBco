@@ -22,7 +22,8 @@ public class Main {
         System.out.println(("El saldo es: " +cdaPablo.getSaldo()));
         System.out.println("El número de cliente de sodaSrl es: "+sodaSrl.getNumeroCliente());
         System.out.println("El prestamo pre aprobado Pyme es: "+ClientePyme.getPrestamo());
-
+        //pablo.obtenerPrestamo(monto:350.0);
+        //System.out.println("Ahora Pablo tiene: "+cdaPablo.getSaldo())
     }
 }
 
