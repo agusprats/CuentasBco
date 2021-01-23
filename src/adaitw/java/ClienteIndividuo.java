@@ -1,9 +1,8 @@
 package adaitw.java;
 
 public class ClienteIndividuo extends Cliente{
-    protected String nombre;
-    protected Integer dni;
-
+    private String nombre;
+    private Integer dni;
 
     public String getNombre() {
         return nombre;
@@ -21,7 +20,7 @@ public class ClienteIndividuo extends Cliente{
         this.dni = dni;
     }
 
-    public ClienteIndividuo(int numeroCliente, Double saldoInicial) {
+    public ClienteIndividuo(Integer numeroCliente, Double saldoInicial) {
         super(numeroCliente, saldoInicial);
     }
 

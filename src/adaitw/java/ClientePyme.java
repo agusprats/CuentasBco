@@ -1,8 +1,9 @@
 package adaitw.java;
 
 public class ClientePyme extends Cliente{
-    protected String razonSocial;
-    protected Integer cuit;
+    private String razonSocial;
+    private Integer cuit;
+
 
     public String getRazonSocial() {
         return razonSocial;
@@ -20,9 +21,8 @@ public class ClientePyme extends Cliente{
         this.cuit = cuit;
     }
 
-    public ClientePyme(int numeroCliente, Double saldoInicial) {
+    public ClientePyme(Integer numeroCliente, Double saldoInicial) {
         super(numeroCliente, saldoInicial);
     }
-
 
 }

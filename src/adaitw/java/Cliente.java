@@ -1,13 +1,14 @@
 package adaitw.java;
 
 public class Cliente {
+
     private Integer numeroCliente;
     private CajaDeAhorro cDeAhorro;
     private CuentaCorriente cCorriente;
     private ClientePyme cPyme;
     private ClienteEmpresa cEmpresa;
     private ClienteIndividuo cIndividuo;
-    private static Integer prestamo = 30000;
+    private static int prestamo = 30000;
     //private Double limitePrestamo;
 
 
@@ -26,10 +27,6 @@ public class Cliente {
     public Cliente(Integer numeroCliente, Double saldoInicial) {
         this.numeroCliente = numeroCliente;
     }
-    //Constructor
-    public Cliente(int prestamo) {
-        this.prestamo = prestamo;
-    }
 
     //Getters
     public CuentaCorriente getcCorriente() {
@@ -41,16 +38,15 @@ public class Cliente {
     public Integer getNumeroCliente() {
         return numeroCliente;
     }
-    public static Integer getPrestamo(){
+    public static int getPrestamo(){
         return prestamo;
-    }
+    };
 }
 
 /*public void obtenerPrestamo(Double monto){
  inicio tramite
  si se aprueba
  cDeAhorro.depositar(monto)*/
-
 
 /*
 Agregar 3 categorías de clientes:

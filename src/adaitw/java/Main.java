@@ -10,7 +10,7 @@ public class Main {
         ClientePyme sodaSrl = new ClientePyme(1231, 5500.00);
         ClienteEmpresa segurosSa = new ClienteEmpresa(1232, 10000.00);
         ClienteIndividuo ana = new ClienteIndividuo(1233, 3500.00);
-
+        ClientePyme miPanSh = new ClientePyme(1234, 5600.00);
         CajaDeAhorro cdaPablo = pablo.getcDeAhorro();
 
 
@@ -20,8 +20,20 @@ public class Main {
 
 
         System.out.println(("El saldo es: " +cdaPablo.getSaldo()));
-        System.out.println("El número de cliente de sodaSrl es: "+sodaSrl.getNumeroCliente());
+        System.out.println("El número de cliente de Ana es: "+ana.getNumeroCliente());
+        System.out.println("El número de cliente de Soda Srl es: "+sodaSrl.getNumeroCliente());
+        System.out.println("El número de cliente de Mi Pan SH es: "+miPanSh.getNumeroCliente());
+        System.out.println("El número de cliente de Seguros SA es: "+segurosSa.getNumeroCliente());
+
+        System.out.println("Empresa no tiene prestamo: "+ClienteEmpresa.getPrestamo());
+        System.out.println("El prestamo cliente Seguros S.A. es: "+segurosSa.getPrestamo());
+
         System.out.println("El prestamo pre aprobado Pyme es: "+ClientePyme.getPrestamo());
+        System.out.println("El prestamo cliente Soda SRL es: "+sodaSrl.getPrestamo());
+
+        System.out.println("El prestamo pre aprobado Individuo es: "+ClienteIndividuo.getPrestamo());
+        System.out.println("El prestamo cliente Ana es: "+ana.getPrestamo());
+
         //pablo.obtenerPrestamo(monto:350.0);
         //System.out.println("Ahora Pablo tiene: "+cdaPablo.getSaldo())
     }

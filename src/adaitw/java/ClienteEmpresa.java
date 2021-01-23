@@ -1,8 +1,9 @@
 package adaitw.java;
 
 public class ClienteEmpresa extends Cliente {
-    protected String razonSocial;
-    protected Integer cuit;
+    private String razonSocial;
+    private Integer cuit;
+    private static int prestamo = 0;
 
     public String getRazonSocial() {
         return razonSocial;
@@ -20,9 +21,19 @@ public class ClienteEmpresa extends Cliente {
         this.cuit = cuit;
     }
 
-    public ClienteEmpresa(int numeroCliente, Double saldoInicial) {
+    public ClienteEmpresa(Integer numeroCliente, Double saldoInicial ) {
         super(numeroCliente, saldoInicial);
     }
+
+    public static int getPrestamo() {
+        return prestamo;
+    }
+
+    public static void setPrestamo(int prestamo) {
+        ClienteEmpresa.prestamo = prestamo;
+    }
+
+
 }
 /* @Override
     public void getPrestamo(Integer prestamo) {
