@@ -1,6 +1,6 @@
 package adaitw.java;
 
-public class Cliente {
+public abstract class Cliente {
 
     private Integer numeroCliente;
     private CajaDeAhorro cDeAhorro;

@@ -4,20 +4,16 @@ public class Main {
 
     public static void main(String[] args) {
 
-
-        Cliente pablo = new Cliente( 50.00);
-
         ClientePyme sodaSrl = new ClientePyme(1231, 5500.00);
         ClienteEmpresa segurosSa = new ClienteEmpresa(1232, 10000.00);
-        ClienteIndividuo ana = new ClienteIndividuo(1233, 3500.00);
         ClientePyme miPanSh = new ClientePyme(1234, 5600.00);
+        ClienteIndividuo ana = new ClienteIndividuo(1233, 3500.00);
+        Cliente pablo = new ClienteIndividuo( 1235, 7000.00); //Aqui estoy haciendo casting
         CajaDeAhorro cdaPablo = pablo.getcDeAhorro();
-
 
         cdaPablo.depositar(100.0);
         cdaPablo.extraer(50.25);
         cdaPablo.depositar(300.50);
-
 
         System.out.println(("El saldo es: " +cdaPablo.getSaldo()));
         System.out.println("El número de cliente de Ana es: "+ana.getNumeroCliente());
@@ -33,6 +29,7 @@ public class Main {
 
         System.out.println("El prestamo pre aprobado Individuo es: "+ClienteIndividuo.getPrestamo());
         System.out.println("El prestamo cliente Ana es: "+ana.getPrestamo());
+        System.out.println("El prestamo cliente Pablo es: "+pablo.getPrestamo());
 
         //pablo.obtenerPrestamo(monto:350.0);
         //System.out.println("Ahora Pablo tiene: "+cdaPablo.getSaldo())

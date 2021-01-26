@@ -1,6 +1,8 @@
 package adaitw.java;
 
-public class Cuenta {
+public abstract class Cuenta {  //Cuando una clase es abstracta, NO se puede instanciar y llamar al constructor.
+    //No se pueden crear objetos a partir de esa clase.
+    //Las clases hijas, quedan obligadas a implementar los métodos
     private String moneda;
     protected Double saldo;
 

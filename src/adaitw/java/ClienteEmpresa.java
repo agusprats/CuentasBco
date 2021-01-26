@@ -33,7 +33,6 @@ public class ClienteEmpresa extends Cliente {
         ClienteEmpresa.prestamo = prestamo;
     }
 
-
 }
 /* @Override
     public void getPrestamo(Integer prestamo) {
